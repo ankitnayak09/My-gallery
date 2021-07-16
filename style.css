@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.container .profile {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    font-family: Montserrat;
+    font-weight: 600;
+}
+
+.container .profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 16px;
+}
+
+.container .profile .profile__items {
+    margin: 0.15em;
+    font-size: 0.875rem;
+}
+
+.container .profile .profile__items:nth-child(3) {
+    color: #A9A9A9;
+    font-size: 0.625rem;
+}
+.profile-info {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0.75em auto;
+}
+
+.profile-info__items {
+    width: 78px;
+    height: 52px;
+    background: #E5E5E5;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.70rem;
+}
+
+.profile-info__items number {
+    color: #4E5150;
+}
+
+.profile-info__items .words {
+    color: #BDBDBD;
+}
+
+.photo-grid {
+    width: 90%;
+    margin: 2.5rem auto;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 1em;
+}
+
+.photo-grid img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.15));
+}
+
+.photo-grid img:nth-child(2) {
+    grid-column: 2 / span 2;
+}
+
+.photo-grid img:nth-child(3) {
+    grid-column: 1 / span 2;
+}
+
+.photo-grid img:nth-child(4) {
+    grid-column: 3;
+    grid-row: 2 / span 2;
+    height: 100%;
+}
+
+footer {
+    text-align: center;
+    color: #B9BDCF;
+    font-weight: 500;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.800rem;
+}
+
+footer a {
+    font-weight: 700;
+    font-size: 0.825rem;
+    color: inherit;
+}
+
+@media only screen and (min-width: 360px) {
+    .profile-info {
+        width: 25%;
+    }
+    .photo-grid {
+        width: 67%;
+    }
+}
